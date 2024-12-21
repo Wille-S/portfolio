@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wille Similä - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- AOS Library for scroll animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Devicon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Wille Similä</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" data-lang="en">About</a></li>
+                    <li><a href="#about" data-lang="fi" style="display: none;">Tietoa</a></li>
+                    <li><a href="#projects" data-lang="en">Projects</a></li>
+                    <li><a href="#projects" data-lang="fi" style="display: none;">Projektit</a></li>
+                    <li><a href="#work-experience" data-lang="en">Work</a></li>
+                    <li><a href="#work-experience" data-lang="fi" style="display: none;">Työ</a></li>
+                    <li><a href="#contact" data-lang="en">Contact</a></li>
+                    <li><a href="#contact" data-lang="fi" style="display: none;">Yhteys</a></li>
+                </ul>
+            </nav>
+            <div id="header-controls">
+                <div id="language-toggle">
+                    <button data-language="en" class="lang-btn active">EN</button>
+                    <button data-language="fi" class="lang-btn">FI</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 data-lang="en">About Me</h2>
+                <h2 data-lang="fi" style="display: none;">Minusta</h2>
+                <p data-lang="en">Hello! I'm a 19-year-old web developer from Helsinki, Finland.</p>
+                <p data-lang="fi" style="display: none;">Moi! Olen 19-vuotias web-kehittäjä Helsingistä.</p>
+                <p data-lang="en">I have hands-on experience in developing and maintaining websites, primarily using WordPress, React, TypeScript, Tailwind CSS and SCSS.</p>
+                <p data-lang="fi" style="display: none;">Minulla on käytännön kokemusta verkkosivujen kehittämisestä ja ylläpidosta, pääasiassa WordPressillä, Reactilla, TypeScriptillä, Tailwind CSS:llä ja SCSS:llä.</p>                
+                <p data-lang="en">In my free time, I work on personal projects, play video games, enjoy sauna, cycle, and read.</p>
+                <p data-lang="fi" style="display: none;">Vapaa-ajallani työskentelen omien projektien parissa, pelaan videopelejä, nautin saunasta, pyöräilen ja luen.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-light" data-aos="fade-up">
+            <div class="container">
+                <h2 data-lang="en">Projects</h2>
+                <h2 data-lang="fi" style="display: none;">Projektit</h2>
+                <div class="projects-grid">
+                    <a href="https://github.com/gOskari/AniWrapped" target="_blank" class="project-card" data-aos="zoom-in" data-lang="en" data-title="AniWrapped">
+                        <h3>AniWrapped</h3>
+                        <p>Website that offers AniList.co users to compare their account data like watchtime etc.</p>
+                        <div class="stack">
+                            <i class="devicon-nextjs-plain" title="Next.js" aria-label="Next.js"></i>
+                            <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS" aria-label="Tailwind CSS"></i>
+                            <i class="devicon-nodejs-plain colored" title="Node.js" aria-label="Node.js"></i>
+                            <i class="devicon-postgresql-plain colored" title="PostgreSQL" aria-label="PostgreSQL"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/gOskari/AniWrapped" target="_blank" class="project-card" data-aos="zoom-in" data-lang="fi" style="display: none;" data-title="AniWrapped">
+                        <h3>AniWrapped</h3>
+                        <p>Nettisivu, joka tarjoaa mahdollisuuden AniList.co käyttäjille vertailla käyttäjätiliensä tietoja.</p>
+                        <div class="stack">
+                            <i class="devicon-nextjs-plain" title="Next.js" aria-label="Next.js"></i>
+                            <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS" aria-label="Tailwind CSS"></i>
+                            <i class="devicon-nodejs-plain colored" title="Node.js" aria-label="Node.js"></i>
+                            <i class="devicon-postgresql-plain colored" title="PostgreSQL" aria-label="PostgreSQL"></i>
+                        </div>
+                    </a>
+    
+                    <a href="https://github.com/Wille-S/portfolio" target="_blank" class="project-card" data-aos="zoom-in" data-lang="en" data-title="Project 2">
+                        <h3>Portfolio</h3>
+                        <p>Simple Portfolio site.</p>
+                        <div class="stack">
+                            <i class="devicon-html5-plain colored" title="HTML5" aria-label="HTML5"></i>
+                            <i class="devicon-css3-plain colored" title="CSS3" aria-label="CSS3"></i>
+                            <i class="devicon-javascript-plain colored" title="JavaScript" aria-label="JavaScript"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Wille-S/portfolio" target="_blank" class="project-card" data-aos="zoom-in" data-lang="fi" style="display: none;" data-title="Projekti 2">
+                        <h3>Portfolio</h3>
+                        <p>Yksinkertainen portfoliosivu.</p>
+                        <div class="stack">
+                            <i class="devicon-html5-plain colored" title="HTML5" aria-label="HTML5"></i>
+                            <i class="devicon-css3-plain colored" title="CSS3" aria-label="CSS3"></i>
+                            <i class="devicon-javascript-plain colored" title="JavaScript" aria-label="JavaScript"></i>
+                        </div>
+                    </a>
+    
+                    <a href="https://github.com/Wille-S/Paivanvalo-Minuutteina" target="_blank" class="project-card" data-aos="zoom-in" data-lang="en" data-title="Daylight-in-Minutes">
+                        <h3>Päivänvalo minuutteina (Daylight in Minutes)</h3>
+                        <p>Website where you can input a Finnish city and view the daylight in minutes throughout the year.</p>
+                        <div class="stack">
+                            <i class="devicon-react-original colored" title="React" aria-label="React"></i>
+                            <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS" aria-label="Tailwind CSS"></i>
+                            <i class="devicon-php-plain colored" title="PHP" aria-label="PHP"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Wille-S/Paivanvalo-Minuutteina" target="_blank" class="project-card" data-aos="zoom-in" data-lang="fi" style="display: none;" data-title="Päivanvalo-Minuutteina">
+                        <h3>Päivänvalo minuutteina</h3>
+                        <p>Nettisivu, jossa voit syöttää suomalaisen kaupungin ja nähdä kuinka monta minuuttia auringonvaloa on eri kuukausina.</p>
+                        <div class="stack">
+                            <i class="devicon-react-original colored" title="React" aria-label="React"></i>
+                            <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS" aria-label="Tailwind CSS"></i>
+                            <i class="devicon-php-plain colored" title="PHP" aria-label="PHP"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="work-experience" class="section" data-aos="fade-up">
+            <div class="container">
+                <h2 data-lang="en">Work Experience</h2>
+                <h2 data-lang="fi" style="display: none;">Työkokemus</h2>
+                <ul class="timeline">
+                    <li data-aos="fade-right" data-lang="en">
+                        <h3>Intern, Alfons Digital Oy</h3>
+                        <span>Aug 2024 – Dec 2024</span>
+                        <p>Developed and customized WordPress websites, creating bespoke React and Twig blocks. Utilized SCSS for styling and implemented Vue.js components.</p>
+                    </li>
+                    <li data-aos="fade-left" data-lang="fi" style="display: none;">
+                        <h3>Työharjoittelija, Alfons Digital Oy</h3>
+                        <span>Elokuu 2024 – Joulukuu 2024</span>
+                        <p>Kehitin ja mukautin WordPress-sivustoja, luoden räätälöityjä React- ja Twig-blokkeja. Käytin SCSS:ää tyylittelyyn ja toteutin Vue.js-komponentteja.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light" data-aos="fade-up">
+            <div class="container">
+                <h2 data-lang="en">Contact</h2>
+                <h2 data-lang="fi" style="display: none;">Yhteystiedot</h2>
+                <p data-lang="en">Feel free to reach out via email:</p>
+                <p data-lang="fi" style="display: none;">Ota yhteyttä sähköpostitse:</p>
+                <a href="#" class="btn" data-lang="en" id="contact-link-en">Get in Touch</a>
+                <a href="#" class="btn" data-lang="fi" style="display: none;" id="contact-link-fi">Ota Yhteyttä</a>                                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-lang="en">&copy; 2024 Wille Similä</p>
+            <p data-lang="fi" style="display: none;">&copy; 2024 Wille Similä</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
